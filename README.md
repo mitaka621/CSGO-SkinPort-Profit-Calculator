@@ -5,9 +5,7 @@
 <h2>Quick Demonstration</h2>
 
 <h2>Explanation</h2>
-![scrshot1](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/assets/114015400/7239b7be-b826-4b23-b66b-9304be59821a)
-
-
+<p>![scrshot1](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/assets/114015400/7239b7be-b826-4b23-b66b-9304be59821a)</p>
 <p>In this demo first i set the number of rows and left the maximum price by defafult. After about 20 seconds the rows were generated and by defualt the items are sorted by the biggest profit.</p>
 <p>The Steam price for the first item is 192.63 USD and the SkinPort equvalent is 150.68 USD. So theoretically if i bought the M4 from SkinPort and solid it on the Steam marketplace i would profit 40.57 USD. You can double check the prices by clicking the icons on the end of each row. (the steam price is taken from the cheapest sell order on the marketplace for that particular item so it can't be 100% accurate)</p>
 <h2>How to set up</h2>
