@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSGO-Profitable Calculator</title>
+    <script src="../script.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3000"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <h2>CSGO Profit Calculator</h2>
+        <div>
+          <div class="head" onclick="toggle()">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+              Show description of the tool
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </p>
+          </div>
+          <div id="extra" style="display: none">
+            <p>
+              This tool allows the user to select the price they are willing to
+              pay and the rows they want to generate. After that by using the
+              SkinPort API and the SteamFolio API the contents of both platforms
+              (Steam and SkinPort) are extracted and then compared. The premise
+              is that you buy an item from SkinPort and then sell it on Steam
+              Market for higher price than you paid for!
+            </p>
+          </div>
+        </div>
+        <div class="input">
+          <section>
+            <div>
+              <label for="rowCount"
+                ><span
+                  >Enter the number of rows you want to generate:</span
+                ></label
+              >
+              <input
+                type="text"
+                id="rowCount"
+                onKeyUp="CheckInput()"
+                name="rowCount"
+              />
+            </div>
+            <div>
+              <label for="maxPrice"
+                ><span
+                  >Enter maximum price &dollar; you are willing to pay (0 -
+                  disabled):</span
+                ></label
+              >
+              <input
+                type="text"
+                id="rowCount"
+                onKeyUp="CheckInput()"
+                name="maxPrice"
+                value="0"
+              />
+            </div>
+          </section>
+          <button type="button" id="searchBtn" onclick="search()">
+            Search
+          </button>
+        </div>
+      </div>
+      <table class="container">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Profit &dollar;</th>
+            <th>Steam Price &dollar;</th>
+            <th>Skinport Price &dollar;</th>
+            <th>Steam link</th>
+            <th>Skinport link</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </main>
+    <div class="lodaingText">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="margin: auto; background: transparent; display: block"
+        width="200px"
+        height="200px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="32"
+          stroke-width="8"
+          stroke-dasharray="50.26548245743669 50.26548245743669"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            repeatCount="indefinite"
+            dur="1s"
+            keyTimes="0;1"
+            values="0 50 50;360 50 50"
+          ></animateTransform>
+        </circle>
+      </svg>
+      <p>Lodaing...</p>
+      <div class="messege">Loading SkinPort items. This may take awhile...</div>
+    </div>
+  </body>
+</html>
