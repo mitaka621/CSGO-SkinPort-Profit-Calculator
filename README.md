@@ -5,3 +5,5 @@
 <h2>Quick Demonstration</h2>
  
 ![](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/blob/main/screenshots/demo.gif)
+<h2>Explanation</h2>
+<p>In this demo first i set the number of rows and left the maximum price by defafult. After about 20 seconds the rows were generated and by defualt the items are sorted by the biggest profit.</p>
