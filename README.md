@@ -3,7 +3,7 @@
 <h2>How does this work?</h2>
 <p>This tool uses the SteamFolio API to gather the Steam Marketplace items and then the SkinPort API to get all of the sale offers for CSGO items in SkinPort. The prices fot the Steam items are updated every hour becouse of the request taking a long time to complete. These HTTP requests are done through a local proxy server which then sends the JSON files to the front end where they are displayed if matched to a criteria.</p>
 <h2>Quick Demonstration</h2>
-
+![demo](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/blob/main/screenshots/demo.gif)
 <h2>Explanation</h2>
 <p>![scrshot1](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/assets/114015400/7239b7be-b826-4b23-b66b-9304be59821a)</p>
 <p>In this demo first i set the number of rows and left the maximum price by defafult. After about 20 seconds the rows were generated and by defualt the items are sorted by the biggest profit.</p>
