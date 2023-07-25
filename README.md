@@ -4,3 +4,4 @@
 <p>This tool uses the SteamFolio API to gather the Steam Marketplace items and then the SkinPort API to get all of the sale offers for CSGO items in SkinPort. The prices fot the Steam items are updated every hour becouse of the request taking a long time to complete. These HTTP requests are done through a local proxy server which then sends the JSON files to the front end where they are displayed if matched to a criteria.</p>
 <h2>Quick Demonstration</h2>
  
+![](https://github.com/mitaka621/CSGO-SkinPort-Profit-Calculator/blob/main/screenshots/demo.gif)
