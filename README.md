@@ -8,6 +8,7 @@
 <p>The Steam price for the first item is 192.63 USD and the SkinPort equvalent is 150.68 USD. So theoretically if i bought the M4 from SkinPort and solid it on the Steam marketplace i would profit 40.57 USD. You can double check the prices by clicking the icons in the end of each row. (The steam price is taken from the cheapest sell order on the marketplace for that particular item so it can't be 100% accurate!)</p>
 <h2>How to set up</h2>
 <ol>
+  <li>If you don't have Node JS installed download it from here: https://nodejs.org/en/download/current</li>
   <li>Download the zip from the releases tab</li>
    <li>Run the "start.bat" file</li>
   <li>The site and the proxy server console should open</li>
