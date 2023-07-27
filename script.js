@@ -21,7 +21,7 @@ async function search() {
   document.querySelector(".lodaingText").style.display = "block";
 
   document.querySelector(".lodaingText .messege").textContent =
-    "Loading Steam items. This may take awhile...";
+    "Loading Steam items. This may take a while...";
   const steamObj = await getSteamData(); //;(await fetch("/data.json")).json()
   document.querySelector(".lodaingText .messege").textContent =
     "Loading SkinPort items. ";
