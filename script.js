@@ -1,6 +1,7 @@
 function toggle() {
   let extra = document.querySelector("#extra");
   extra.style.display === "none" ? showMore() : showLess();
+
   function showMore() {
     extra.style.display = "block";
     document.querySelector(".head").innerHTML =
