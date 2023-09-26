@@ -1,5 +1,5 @@
 <h1>What does this do?</h1>
-<p>This app aims to get all of the items which are cheaper on SkinPort but more expensive on the Steam Marketplace. This way, if you buy one of these items and then sell them on Steam you will make a profit. This profit is calculated with the current prices of the items in USD. However there may be some inacuracies for some of the items.</p>
+<p>This app aims to get all of the items which are cheaper on SkinPort but more expensive on the Steam Marketplace. This way, if you buy one of these items and then sell it on Steam you will make a profit. This profit is calculated with the current prices of the items in USD.</p>
 <h2>Quick Demonstration</h2>
 <img src="./screenshots/demo.gif" alt="err">
 <h2>Explanation</h2>
